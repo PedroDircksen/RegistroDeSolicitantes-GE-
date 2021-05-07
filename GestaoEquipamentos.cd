@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaEquipamento" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAYAAEAQAAAAAAAAAAACAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Telas\TelaEquipamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorEquipamento" Collapsed="true">
+    <Position X="4.75" Y="0.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ABABAAAAYAAAAAAAEAAAAEAAAAAABAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Controladores\ControladorEquipamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="equipamentos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Equipamento" Collapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAABAAAAAAAAAAAAAAQQAEABAAAAAAgA=</HashCode>
+      <FileName>Dominio\Equipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Telas.TelaChamado" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <AssociationLine Name="telaEquipamento" Type="GestaoEquipamentos.ConsoleApp.Telas.TelaEquipamento" FixedToPoint="true">
+      <Path>
+        <Point X="1.211" Y="4" />
+        <Point X="1.211" Y="1.441" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.369" Y="0.175" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="controladorChamado" Type="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="4.313" />
+        <Point X="4.75" Y="4.313" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAQAAAAAAAAAAAAABAAgACAAAAABCAAAAAAAEAA=</HashCode>
+      <FileName>Telas\TelaChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="telaEquipamento" />
+      <Field Name="controladorChamado" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Controladores.ControladorChamado" Collapsed="true">
+    <Position X="4.75" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAEAAAAABAAAAAAAAAABAIAAAIAAEAA=</HashCode>
+      <FileName>Controladores\ControladorChamado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="controladorEquipamento" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="chamados" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="GestaoEquipamentos.ConsoleApp.Dominio.Chamado" Collapsed="true">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAIAAAQAAAAAAAAAABAAAAAAAEAAAAgA=</HashCode>
+      <FileName>Dominio\Chamado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
